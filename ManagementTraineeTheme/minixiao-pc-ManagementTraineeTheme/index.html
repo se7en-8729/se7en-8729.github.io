@@ -8,19 +8,23 @@
     <meta name="keywords" content="迷你校,校招,校园招聘,迷你校校招,迷你校招聘,迷你校校园招聘,互联网招聘,迷你校互联网招聘,菁英圈,迷你校菁英圈,精英圈,迷你校精英圈,内推,迷你校内推,名企内推,移动互联网招聘,垂直互联网招聘,微信招聘,微博招聘,跳槽,高薪职位,互联网圈子,IT招聘,职场招聘,猎头招聘,O2O招聘,LBS招聘,社会招聘,社招,迷你校官网,迷你校百科">
     <meta name="description" content="汇聚青年菁英，帮助学生成长，专注校园服务">
     <script>
-        if(/AppleWebKit.*Mobile/i.test(navigator.userAgent)
-                || /Android/i.test(navigator.userAgent)
-                || /BlackBerry/i.test(navigator.userAgent)
-                || /IEMobile/i.test(navigator.userAgent)
-                || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){
-            if(/iPad/i.test(navigator.userAgent)){
-                window.location="https://se7en-8729.github.io/ManagementTraineeTheme/minixiao-pc-ManagementTraineeTheme/index.html"
+        function detectmob(){
+            if(/AppleWebKit.*Mobile/i.test(navigator.userAgent)
+                    || /Android/i.test(navigator.userAgent)
+                    || /BlackBerry/i.test(navigator.userAgent)
+                    || /IEMobile/i.test(navigator.userAgent)
+                    || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){
+                if(/iPad/i.test(navigator.userAgent)){
+                    window.location.href="http://www.minixiao.com/st/spread/ManagementTrainee/index.html"
+                }else{
+                    window.location.href="http://mobile.minixiao.com/st/spread/ManagementTrainee/index.html"
+                }
             }else{
-                window.location="https://se7en-8729.github.io/ManagementTraineeTheme/minixiao-m-ManagementTraineeTheme/index.html"
+                window.location.href="http://www.minixiao.com/st/spread/ManagementTrainee/index.html"
             }
-        }else{
-            window.location="https://se7en-8729.github.io/ManagementTraineeTheme/minixiao-pc-ManagementTraineeTheme/index.html"
+            return false;
         }
+        detectmob();
     </script>
     <link rel="stylesheet" type="text/css" href="css/mt-theme-pc.css">
     <script>

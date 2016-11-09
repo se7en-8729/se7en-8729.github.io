@@ -12,19 +12,23 @@
     <meta content="email=no" name="format-detection">
     <!--<link rel="stylesheet" type="text/css" href="css/mt-theme-m.css">-->
     <script>
-        if(/AppleWebKit.*Mobile/i.test(navigator.userAgent)
-                || /Android/i.test(navigator.userAgent)
-                || /BlackBerry/i.test(navigator.userAgent)
-                || /IEMobile/i.test(navigator.userAgent)
-                || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){
-            if(/iPad/i.test(navigator.userAgent)){
-                window.location="https://se7en-8729.github.io/ManagementTraineeTheme/minixiao-pc-ManagementTraineeTheme/index.html"
+        function detectmob(){
+            if(/AppleWebKit.*Mobile/i.test(navigator.userAgent)
+                    || /Android/i.test(navigator.userAgent)
+                    || /BlackBerry/i.test(navigator.userAgent)
+                    || /IEMobile/i.test(navigator.userAgent)
+                    || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){
+                if(/iPad/i.test(navigator.userAgent)){
+                    window.location.href="http://www.minixiao.com/st/spread/ManagementTrainee/index.html"
+                }else{
+                    window.location.href="http://mobile.minixiao.com/st/spread/ManagementTrainee/index.html"
+                }
             }else{
-                window.location="https://se7en-8729.github.io/ManagementTraineeTheme/minixiao-m-ManagementTraineeTheme/index.html"
+                window.location.href="http://www.minixiao.com/st/spread/ManagementTrainee/index.html"
             }
-        }else{
-            window.location="https://se7en-8729.github.io/ManagementTraineeTheme/minixiao-pc-ManagementTraineeTheme/index.html"
+            return false;
         }
+        detectmob();
     </script>
     <style>
         *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
