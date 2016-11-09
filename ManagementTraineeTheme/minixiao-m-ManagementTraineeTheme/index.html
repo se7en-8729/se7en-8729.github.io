@@ -11,6 +11,21 @@
     <meta content="telephone=no" name="format-detection">
     <meta content="email=no" name="format-detection">
     <!--<link rel="stylesheet" type="text/css" href="css/mt-theme-m.css">-->
+    <script>
+        if(/AppleWebKit.*Mobile/i.test(navigator.userAgent)
+                || /Android/i.test(navigator.userAgent)
+                || /BlackBerry/i.test(navigator.userAgent)
+                || /IEMobile/i.test(navigator.userAgent)
+                || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){
+            if(/iPad/i.test(navigator.userAgent)){
+                window.location="https://se7en-8729.github.io/ManagementTraineeTheme/minixiao-pc-ManagementTraineeTheme/index.html"
+            }else{
+                window.location="https://se7en-8729.github.io/ManagementTraineeTheme/minixiao-m-ManagementTraineeTheme/index.html"
+            }
+        }else{
+            window.location="https://se7en-8729.github.io/ManagementTraineeTheme/minixiao-pc-ManagementTraineeTheme/index.html"
+        }
+    </script>
     <style>
         *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
         body,dd,dl,form,h1,h2,h3,h4,h5,h6,p{margin:0}
