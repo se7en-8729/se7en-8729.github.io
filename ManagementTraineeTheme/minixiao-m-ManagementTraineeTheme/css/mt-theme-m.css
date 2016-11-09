@@ -1,0 +1,59 @@
+*{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+body,dd,dl,form,h1,h2,h3,h4,h5,h6,p{margin:0}
+ul{list-style:none;margin:0;padding:0}
+a{text-decoration:none;color:#363636;outline:0;-webkit-tap-highlight-color:transparent;display:block;}
+html{font-size:14px;font-family:'Microsoft YaHei',Helvetica,sans-serif;background:#fff}
+img{width:100%;border:none;outline:0;}
+.clearfix:after,.clearfix:before{content:"";display:table}
+.clearfix:after{clear:both}
+body{font-family:Helvetica;}
+html{font-size:10px}
+@media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
+@media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}}
+@media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}}
+@media screen and (min-width:640px) and (max-width:719px){html{font-size:20px}}
+@media screen and (min-width:720px) and (max-width:749px){html{font-size:22.5px}}
+@media screen and (min-width:750px) and (max-width:799px){html{font-size:23.5px}}
+@media screen and (min-width:800px){html{font-size:25px}}
+
+.theme-banner{width:100%}
+.theme-banner img{display:block;width:100%}
+.con-wrap{width:100%;overflow:hidden;background-color:#fee27d}
+.lists-m{width:94%; margin:0 auto;}
+.lists-m li{margin:30px 0; border:1px solid #ddd;background:#fff;}
+
+.lists-m-logo{
+    position: relative;
+    width:100%; height:125px;
+    border-bottom:1px solid #ddd;
+}
+.lists-m-logo>img{
+    display:block;
+    position: absolute; left:0; right:0; top:0; bottom:0; margin: auto;
+    width:130px; height:63px;
+
+}
+.lists-m-job dt{
+    border-bottom:1px solid #ddd;
+    font-size:2.4rem;
+    padding:8px 0;text-align: center;
+}
+.lists-m-job dd{
+    margin: 5px auto;
+    font-size: 1.6rem;
+    line-height: 1;
+    width: 50%;
+}
+.lists-m-job dd a{
+    margin:12px 0;
+    color:#197ef5;text-align: left;
+}
+.lists-m-btn{
+    width:100%; color:#fff; font-size:1.6rem;
+    text-align: center;
+    background:#197ef5; padding:12px 0;
+}
+
+
+.btn{width:80%; padding:10px; font-size:2rem; display:block;margin:10px auto 30px;border-radius:8px;background-color:#ffbf27;color:#fff;text-align:center}
+.btn:hover{background-color:#ffd369;}
