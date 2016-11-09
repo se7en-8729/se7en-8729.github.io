@@ -15,14 +15,14 @@
                     || /IEMobile/i.test(navigator.userAgent)
                     || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){
                 if(/iPad/i.test(navigator.userAgent)){
-                    window.location.href="http://www.minixiao.com/st/spread/ManagementTrainee/index.html"
+                    return false;
                 }else{
                     window.location.href="http://mobile.minixiao.com/st/spread/ManagementTrainee/index.html"
                 }
             }else{
-                window.location.href="http://www.minixiao.com/st/spread/ManagementTrainee/index.html"
+                return false;
             }
-            return false;
+
         }
         detectmob();
     </script>
@@ -51,13 +51,13 @@
 <div id="header-nav-white">
     <div class="inner">
         <div class="header-nav-logo">
-            <a href="http://www.minixiao.com/"><img src="img/logo2.png"></a>
+            <a id="mt-logo" href="http://www.minixiao.com/"><img src="img/logo2.png"></a>
         </div>
         <ul class="nav">
-            <li><a href="http://www.minixiao.com/index.html">首页</a></li>
-            <li><a href="http://www.minixiao.com/position/index">职位</a></li>
-            <li><a href="http://www.minixiao.com/company/index">公司</a></li>
-            <li><a href="http://www.minixiao.com/activity/index">活动</a></li>
+            <li><a id="mt-index" href="http://www.minixiao.com/index.html">首页</a></li>
+            <li><a id="mt-jobs" href="http://www.minixiao.com/position/index">职位</a></li>
+            <li><a id="mt-companys" href="http://www.minixiao.com/company/index">公司</a></li>
+            <li><a id="mt-activitys" href="http://www.minixiao.com/activity/index">活动</a></li>
         </ul>
     </div>
 </div>
@@ -88,12 +88,12 @@
                 </div>
                 <div class="lists-after">
                     <ul class="lists-job">
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/1837.html">（北京）产品管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/1841.html">（北京）运营管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/1840.html">（北京）营销管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/1838.html">（北京）技术管培</a></li>
+                        <li><a id="mt1837" target="_blank" href="http://www.minixiao.com/position/st/1837.html">（北京）产品管培</a></li>
+                        <li><a id="mt1841" target="_blank" href="http://www.minixiao.com/position/st/1841.html">（北京）运营管培</a></li>
+                        <li><a id="mt1840" target="_blank" href="http://www.minixiao.com/position/st/1840.html">（北京）营销管培</a></li>
+                        <li><a id="mt1838" target="_blank" href="http://www.minixiao.com/position/st/1838.html">（北京）技术管培</a></li>
                     </ul>
-                    <a class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/6733.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E8%81%9A%E7%BE%8E%E4%BC%98%E5%93%81&hmkw=&hmci=">更多热招职位</a>
+                    <a id="mt-s6733" class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/6733.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E8%81%9A%E7%BE%8E%E4%BC%98%E5%93%81&hmkw=&hmci=">更多热招职位</a>
                 </div>
             </li>
             <li>
@@ -116,11 +116,11 @@
                 </div>
                 <div class="lists-after">
                     <ul class="lists-job w3">
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3666.html">（北京）管培生</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3665.html">（上海）管培生</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3667.html">（广州）管培生</a></li>
+                        <li><a id="mt3666" target="_blank" href="http://www.minixiao.com/position/st/3666.html">（北京）管培生</a></li>
+                        <li><a id="mt3665" target="_blank" href="http://www.minixiao.com/position/st/3665.html">（上海）管培生</a></li>
+                        <li><a id="mt3667" target="_blank" href="http://www.minixiao.com/position/st/3667.html">（广州）管培生</a></li>
                     </ul>
-                    <a class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/15602.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=GroupM%20%E7%BE%A4%E9%82%91&hmkw=&hmci=">更多热招职位</a>
+                    <a id="mt-s15602" class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/15602.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=GroupM%20%E7%BE%A4%E9%82%91&hmkw=&hmci=">更多热招职位</a>
                 </div>
             </li>
             <li>
@@ -143,12 +143,12 @@
                 </div>
                 <div class="lists-after">
                     <ul class="lists-job">
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3760.html">（上海）职能管理</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3763.html">（上海）产业运营</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3761.html">（上海）技术研发</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3762.html">（上海）营销方向</a></li>
+                        <li><a id="mt3760" target="_blank" href="http://www.minixiao.com/position/st/3760.html">（上海）职能管理</a></li>
+                        <li><a id="mt3763" target="_blank" href="http://www.minixiao.com/position/st/3763.html">（上海）产业运营</a></li>
+                        <li><a id="mt3761" target="_blank" href="http://www.minixiao.com/position/st/3761.html">（上海）技术研发</a></li>
+                        <li><a id="mt3762" target="_blank" href="http://www.minixiao.com/position/st/3762.html">（上海）营销方向</a></li>
                     </ul>
-                    <a class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/16253.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E4%B8%AD%E5%8C%96%E5%9B%BD%E9%99%85&hmkw=&hmci=">更多热招职位</a>
+                    <a id="mt-s16253" class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/16253.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E4%B8%AD%E5%8C%96%E5%9B%BD%E9%99%85&hmkw=&hmci=">更多热招职位</a>
                 </div>
             </li>
             <li>
@@ -176,12 +176,12 @@
                 </div>
                 <div class="lists-after">
                     <ul class="lists-job">
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2559.html">（大连）销售管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2500.html">（厦门）管理管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2519.html">（郑州）技术管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2482.html">（上海）市场管培</a></li>
+                        <li><a id="mt2559" target="_blank" href="http://www.minixiao.com/position/st/2559.html">（大连）销售管培</a></li>
+                        <li><a id="mt2500" target="_blank" href="http://www.minixiao.com/position/st/2500.html">（厦门）管理管培</a></li>
+                        <li><a id="mt2519" target="_blank" href="http://www.minixiao.com/position/st/2519.html">（郑州）技术管培</a></li>
+                        <li><a id="mt2482" target="_blank" href="http://www.minixiao.com/position/st/2482.html">（上海）市场管培</a></li>
                     </ul>
-                    <a class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/9160.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E8%92%82%E6%A3%AE%E5%85%8B%E8%99%8F%E4%BC%AF%E7%94%B5%E6%A2%AF&hmkw=&hmci=">更多热招职位</a>
+                    <a id="mt-s9160" class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/9160.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E8%92%82%E6%A3%AE%E5%85%8B%E8%99%8F%E4%BC%AF%E7%94%B5%E6%A2%AF&hmkw=&hmci=">更多热招职位</a>
                 </div>
             </li>
             <li>
@@ -204,12 +204,12 @@
                 </div>
                 <div class="lists-after">
                     <ul class="lists-job w3">
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2148.html">（广州）管培生</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2149.html">（深圳）管培生</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2153.html">（无锡）管培生</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2154.html">（太原）管培生</a></li>
+                        <li><a id="mt2148" target="_blank" href="http://www.minixiao.com/position/st/2148.html">（广州）管培生</a></li>
+                        <li><a id="mt2149" target="_blank" href="http://www.minixiao.com/position/st/2149.html">（深圳）管培生</a></li>
+                        <li><a id="mt2153" target="_blank" href="http://www.minixiao.com/position/st/2153.html">（无锡）管培生</a></li>
+                        <li><a id="mt2154" target="_blank" href="http://www.minixiao.com/position/st/2154.html">（太原）管培生</a></li>
                     </ul>
-                    <a class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/7628.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E8%BF%85%E8%BE%BE%E4%B8%AD%E5%9B%BD&hmkw=&hmci=">更多热招职位</a>
+                    <a id="mt-s7628" class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/7628.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E8%BF%85%E8%BE%BE%E4%B8%AD%E5%9B%BD&hmkw=&hmci=">更多热招职位</a>
                 </div>
             </li>
             <li>
@@ -232,12 +232,12 @@
                 </div>
                 <div class="lists-after">
                     <ul class="lists-job w5">
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3241.html">（上海）财务管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3247.html">（深圳）IT管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3057.html">（广州）SEO管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3023.html">（深圳）新媒体管培</a></li>
+                        <li><a id="mt3241" target="_blank" href="http://www.minixiao.com/position/st/3241.html">（上海）财务管培</a></li>
+                        <li><a id="mt3247" target="_blank" href="http://www.minixiao.com/position/st/3247.html">（深圳）IT管培</a></li>
+                        <li><a id="mt3057" target="_blank" href="http://www.minixiao.com/position/st/3057.html">（广州）SEO管培</a></li>
+                        <li><a id="mt3023" target="_blank" href="http://www.minixiao.com/position/st/3023.html">（深圳）新媒体管培</a></li>
                     </ul>
-                    <a class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/11052.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E8%89%BE%E6%AC%A7%E5%8F%B2%E5%AF%86%E6%96%AF&hmkw=&hmci=">更多热招职位</a>
+                    <a id="mt-s11052" class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/11052.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E8%89%BE%E6%AC%A7%E5%8F%B2%E5%AF%86%E6%96%AF&hmkw=&hmci=">更多热招职位</a>
                 </div>
             </li>
             <li>
@@ -264,12 +264,12 @@
                 </div>
                 <div class="lists-after">
                     <ul class="lists-job">
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2705.html">（成都）生产管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2671.html">（宁波）物流管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2607.html">（上海）质量管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2677.html">（重庆）仓库管培</a></li>
+                        <li><a id="mt2705" target="_blank" href="http://www.minixiao.com/position/st/2705.html">（成都）生产管培</a></li>
+                        <li><a id="mt2671" target="_blank" href="http://www.minixiao.com/position/st/2671.html">（宁波）物流管培</a></li>
+                        <li><a id="mt2607" target="_blank" href="http://www.minixiao.com/position/st/2607.html">（上海）质量管培</a></li>
+                        <li><a id="mt2677" target="_blank" href="http://www.minixiao.com/position/st/2677.html">（重庆）仓库管培</a></li>
                     </ul>
-                    <a class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/8594.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=Faurecia&hmkw=&hmci=">更多热招职位</a>
+                    <a id="mt-s8594" class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/8594.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=Faurecia&hmkw=&hmci=">更多热招职位</a>
                 </div>
             </li>
             <li>
@@ -292,12 +292,12 @@
                 </div>
                 <div class="lists-after">
                     <ul class="lists-job">
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3875.html">（上海）管培生</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/4032.html">（上海）业务助理</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/4030.html">（上海）投研助理</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/4037.html">（北京）客户经理</a></li>
+                        <li><a id="mt3875" target="_blank" href="http://www.minixiao.com/position/st/3875.html">（上海）管培生</a></li>
+                        <li><a id="mt4032" target="_blank" href="http://www.minixiao.com/position/st/4032.html">（上海）业务助理</a></li>
+                        <li><a id="mt4030" target="_blank" href="http://www.minixiao.com/position/st/4030.html">（上海）投研助理</a></li>
+                        <li><a id="mt4037" target="_blank" href="http://www.minixiao.com/position/st/4037.html">（北京）客户经理</a></li>
                     </ul>
-                    <a class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/17331.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E5%9B%BD%E9%87%91%E8%AF%81%E5%88%B8&hmkw=&hmci=">更多热招职位</a>
+                    <a id="mt-s17331" class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/17331.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E5%9B%BD%E9%87%91%E8%AF%81%E5%88%B8&hmkw=&hmci=">更多热招职位</a>
                 </div>
             </li>
             <li>
@@ -325,12 +325,12 @@
                 </div>
                 <div class="lists-after">
                     <ul class="lists-job">
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/873.html">（上海）门店管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/1687.html">（上海）实习生</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/875.html">（上海）商品采购</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/874.html">（上海）运营专员</a></li>
+                        <li><a id="mt873" target="_blank" href="http://www.minixiao.com/position/st/873.html">（上海）门店管培</a></li>
+                        <li><a id="mt1687" target="_blank" href="http://www.minixiao.com/position/st/1687.html">（上海）实习生</a></li>
+                        <li><a id="mt875" target="_blank" href="http://www.minixiao.com/position/st/875.html">（上海）商品采购</a></li>
+                        <li><a id="mt874" target="_blank" href="http://www.minixiao.com/position/st/874.html">（上海）运营专员</a></li>
                     </ul>
-                    <a class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/3483.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E4%B8%8A%E6%B5%B7%E9%82%BB%E5%AE%B6%E8%B6%85%E5%B8%82&hmkw=&hmci=">更多热招职位</a>
+                    <a id="mt-s3483" class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/3483.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E4%B8%8A%E6%B5%B7%E9%82%BB%E5%AE%B6%E8%B6%85%E5%B8%82&hmkw=&hmci=">更多热招职位</a>
                 </div>
             </li>
             <li>
@@ -353,12 +353,12 @@
                 </div>
                 <div class="lists-after">
                     <ul class="lists-job">
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2073.html">（上海）财务管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2068.html">（杭州）财务管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2062.html">（上海）销售管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2064.html">（上海）数据管理</a></li>
+                        <li><a id="mt2073" target="_blank" href="http://www.minixiao.com/position/st/2073.html">（上海）财务管培</a></li>
+                        <li><a id="mt2068" target="_blank" href="http://www.minixiao.com/position/st/2068.html">（杭州）财务管培</a></li>
+                        <li><a id="mt2062" target="_blank" href="http://www.minixiao.com/position/st/2062.html">（上海）销售管培</a></li>
+                        <li><a id="mt2064" target="_blank" href="http://www.minixiao.com/position/st/2064.html">（上海）数据管理</a></li>
                     </ul>
-                    <a class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/7629.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E9%BB%98%E6%B2%99%E4%B8%9C&hmkw=&hmci=">更多热招职位</a>
+                    <a id="mt-s7629" class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/7629.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E9%BB%98%E6%B2%99%E4%B8%9C&hmkw=&hmci=">更多热招职位</a>
                 </div>
             </li>
             <li>
@@ -381,12 +381,12 @@
                 </div>
                 <div class="lists-after">
                     <ul class="lists-job">
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3685.html">（滁州）工程管理</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3683.html">（滁州）研发管理</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3682.html">（滁州）生产管理</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/3673.html">（松原）财务管理</a></li>
+                        <li><a id="mt3685" target="_blank" href="http://www.minixiao.com/position/st/3685.html">（滁州）工程管理</a></li>
+                        <li><a id="mt3683" target="_blank" href="http://www.minixiao.com/position/st/3683.html">（滁州）研发管理</a></li>
+                        <li><a id="mt3682" target="_blank" href="http://www.minixiao.com/position/st/3682.html">（滁州）生产管理</a></li>
+                        <li><a id="mt3673" target="_blank" href="http://www.minixiao.com/position/st/3673.html">（松原）财务管理</a></li>
                     </ul>
-                    <a class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/15597.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E5%98%89%E5%90%89%E6%8A%95%E8%B5%84&hmkw=&hmci=">更多热招职位</a>
+                    <a id="mt-s15597" class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/15597.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E5%98%89%E5%90%89%E6%8A%95%E8%B5%84&hmkw=&hmci=">更多热招职位</a>
                 </div>
             </li>
             <li>
@@ -413,16 +413,16 @@
                 </div>
                 <div class="lists-after">
                     <ul class="lists-job">
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2013.html">（北京）销售管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2038.html">（上海）IT管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2037.html">（广州）事务管培</a></li>
-                        <li><a target="_blank" href="http://www.minixiao.com/position/st/2032.html">（上海）电商管培</a></li>
+                        <li><a id="mt2013" target="_blank" href="http://www.minixiao.com/position/st/2013.html">（北京）销售管培</a></li>
+                        <li><a id="mt2038" target="_blank" href="http://www.minixiao.com/position/st/2038.html">（上海）IT管培</a></li>
+                        <li><a id="mt2037" target="_blank" href="http://www.minixiao.com/position/st/2037.html">（广州）事务管培</a></li>
+                        <li><a id="mt2032" target="_blank" href="http://www.minixiao.com/position/st/2032.html">（上海）电商管培</a></li>
                     </ul>
-                    <a class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/7640.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E6%9D%8E%E9%94%A6%E8%AE%B0&hmkw=&hmci=">更多热招职位</a>
+                    <a id="mt-s7640" class="lists-btn" target="_blank" href="http://corp.minixiao.com/c/st/7640.html?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E6%9D%8E%E9%94%A6%E8%AE%B0&hmkw=&hmci=">更多热招职位</a>
                 </div>
             </li>
         </ul>
-        <a class="btn" target="_blank" href="http://www.minixiao.com/position/index?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E6%9B%B4%E5%A4%9A%E8%81%8C%E4%BD%8D&hmkw=&hmci=">回主页查看更多职位 &gt;&gt;</a>
+        <a id="mt-jobAll" class="btn" target="_blank" href="http://www.minixiao.com/position/index?hmsr=%E7%AE%A1%E5%9F%B9%E4%B8%93%E9%A2%98&hmpl=pc%E7%AB%AF&hmcu=%E6%9B%B4%E5%A4%9A%E8%81%8C%E4%BD%8D&hmkw=&hmci=">回主页查看更多职位 &gt;&gt;</a>
     </div>
 
 </div>
@@ -430,25 +430,25 @@
     <div class="inner">
         <ul class="footer-l list-unstyled">
             <li>
-                <a href="http://www.minixiao.com/about.html" target="_blank">关于我们</a>
+                <a id="mt-about" href="http://www.minixiao.com/about.html" target="_blank">关于我们</a>
             </li>
             <li>
-                <a href="http://www.minixiao.com/question.html" target="_blank">帮助中心</a>
+                <a id="mt-help" href="http://www.minixiao.com/question.html" target="_blank">帮助中心</a>
             </li>
             <li>
-                <a href="http://weibo.com/u/5598304348" target="_blank">官方微博</a>
+                <a id="mt-weibo" href="http://weibo.com/u/5598304348" target="_blank">官方微博</a>
             </li>
             <li>
-                <a href="javascript:;" class="footer-wx-QR">
+                <a id="mt-weixin" href="javascript:;" class="footer-wx-QR">
                     微信公众号
                     <span class="wx-QR-bottom"><img src="img/QR_New.jpg"></span>
                 </a>
             </li>
             <li>
-                <a href="http://passport.minixiao.com/corp/register/" target="_blank">企业入驻</a>
+                <a id="mt-corp" href="http://passport.minixiao.com/corp/register/" target="_blank">企业入驻</a>
             </li>
             <li class="fa-contact">
-                联系我们：<a href="mailto:bd@minixiao.com" target="_blank">bd@minixiao.com</a>
+                联系我们：<a id="mt-email" href="mailto:bd@minixiao.com" target="_blank">bd@minixiao.com</a>
             </li>
         </ul>
         <p class="footer-address">
