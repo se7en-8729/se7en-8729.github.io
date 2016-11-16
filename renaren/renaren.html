@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <title>人啊人</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--[if lt IE 9]><![endif]-->
+    <!--<style type="text/css">
+        .main-left{
+            background:transparent;
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F4dadf7,endColorstr=#7F4dadf7);
+            zoom: 1;
+        }
+        .main-right{
+            background:transparent;
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000,endColorstr=#B2000000);
+            zoom: 1;
+        }
+        .r-form{
+            background:transparent;
+            filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#19000000,endColorstr=#19000000);
+            zoom: 1;
+        }
+    </style>-->
+
+</head>
+<body>
+<div class="wrap">
+    <div class="wrap-left">
+        <div class="university-img">
+            <img src="img/ren-img1.jpg">
+        </div>
+        <div class="l-bg"></div>
+    </div>
+    <div class="wrap-right">
+        <div class="main-left">
+            <div class="l-txt">
+                <div class="l-tit"><img src="img/ren-mnx.png"></div>
+                <h2 class="l-subtit">职业测评介绍</h2>
+                <ul class="l-list">
+                    <li>
+                        <h3>项目介绍</h3>
+                        <p>每一个人都有优势和劣势，劣势就是一块儿短板，如果你能发现自己的劣势并在未来迅速提升这部分短板同时保持自己的优势，你就能把它变成资本，来获取成功。迷你校职业测评可以为你找到这块短板。</p>
+                    </li>
+                    <li>
+                        <h3>测评目的</h3>
+                        <p>测评自己的基本能力水平和学习掌握新知识的潜在能力等方面的状况，能很好地反映自己所必备的基本能力倾向状况，为自己提供基本能力方面的分析和建议，从而帮助自己更准确地认识自己，为自己的自我矫正和培训提供参考，对自己的职业方向做出初步的判断。</p>
+                    </li>
+                    <li>
+                        <h3>适用对象</h3>
+                        <p>针对大学应届毕业生。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="l-logo"><img src="img/ren-logo.png"></div>
+        </div>
+        <div class="main-right">
+            <div class="r-form">
+                <form method="post">
+                    <div class="form-group clearfix">
+                        <label for="name" class="control-label"><span>姓名</span><span class="red-star">*</span></label>
+                        <div class="control-input">
+                            <input type="text" id="name" name="name" placeholder="请输入真实姓名" required="" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group clearfix">
+                        <label for="major" class="control-label"><span>专业</span><span class="red-star">*</span></label>
+                        <div class="control-input">
+                            <input type="text" id="major" name="name" placeholder="请输入所学专业" required="" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group clearfix">
+                        <label for="education" class="control-label"><span>学历</span><span class="red-star">*</span></label>
+                        <div class="control-input">
+                            <input type="text" id="education" name="name" placeholder="请选择" required="" autocomplete="off">
+                        </div>
+                        <div class="error-tip">必填</div>
+                    </div>
+                    <div class="form-group clearfix">
+                        <label for="tel" class="control-label"><span>手机号</span><span class="red-star">*</span></label>
+                        <div class="control-input">
+                            <input type="tel" id="tel" name="name" placeholder="请输入手机号以便第一时间收到短信通知" required="" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group clearfix">
+                        <label for="email" class="control-label"><span>邮箱</span><span class="red-star">*</span></label>
+                        <div class="control-input">
+                            <input type="email" id="email" name="name" placeholder="请输入邮箱以便接受测评结果" required="" autocomplete="off">
+                        </div>
+                    </div>
+                    <button type="button" class="cp-btn">开始测评</button>
+                </form>
+                <p class="font-white">温馨提示：一个手机号只能测评一次！如有问题请致电迷你校职业测评客服电话：010-2522123</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
+<script>
+    function autoHeight(){
+        var $winH=$(window).height(),
+            $unH=$('.university-img').height();
+        $('.main-left,.main-right').css({
+            'height':$winH
+        });
+        $('.l-bg').css({
+            'height':$winH-$unH
+        })
+    }
+    autoHeight();
+    window.onresize = function(){
+        autoHeight();
+    }
+</script>
+</body>
+</html>
